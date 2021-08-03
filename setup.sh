@@ -120,7 +120,7 @@ echo ""  | tee -a log-install.txt
 echo "=============================-[ AUTOSCRIPT PREMIUM ]-===========================" | tee -a log-install.txt
 echo "========================-[ BY ANAK EMAK PALING GANTENG ]-=======================" | tee -a log-install.txt
 echo ""
-echo " Reboot 15 Sec"
-sleep 15
+echo " Reboot 10 Sec"
+sleep 10
 rm -f setup.sh
 reboot
