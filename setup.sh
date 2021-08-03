@@ -41,6 +41,7 @@ wget https://raw.githubusercontent.com/sukirmanoke/project/main/ins-vt.sh && chm
 #install L2TP
 wget https://raw.githubusercontent.com/sukirmanoke/project/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/sukirmanoke/project/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+######
 wget http://akses.heyosam.me:81/ins-trojango.sh && chmod +x ins-trojango.sh && screen -S Trojan-go ./ins-trojango.sh
 
 rm -f /root/ssh-vpn.sh
