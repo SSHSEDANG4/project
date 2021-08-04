@@ -34,7 +34,7 @@ wget https://raw.githubusercontent.com/hesoyam-oke/project/main/ssh-vpn.sh && ch
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/hesoyam-oke/project/project/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/hesoyam-oke/project/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #install v2ray
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
