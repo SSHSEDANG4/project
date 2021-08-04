@@ -37,9 +37,9 @@ wget https://raw.githubusercontent.com/hesoyam-oke/project/main/ssr.sh && chmod 
 wget https://raw.githubusercontent.com/hesoyam-oke/project/project/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #install v2ray
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
-wget https://raw.githubusercontent.com/hesoyam-oke/project/project/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/hesoyam-oke/project/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/hesoyam-oke/project/project/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/hesoyam-oke/project/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 ######
 wget http://akses.heyosam.me:81/ins-trojango.sh && chmod +x ins-trojango.sh && screen -S Trojan-go ./ins-trojango.sh
