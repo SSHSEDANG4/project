@@ -13,9 +13,9 @@ echo "Only For Premium Users"
 exit 0
 fi
 apt install jq curl -y
-DOMAIN=heyosam.tech
+DOMAIN=vpn-sukirman.tech
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.heyosam.tech
+SUB_DOMAIN=${sub}.vpn-sukirman.tech
 CF_ID=sosohoha573@gmail.com
 CF_KEY=5fa19185029c2c03fff9c7b362d30024dfd15
 set -euo pipefail
