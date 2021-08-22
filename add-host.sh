@@ -14,8 +14,8 @@ echo ""
 echo "Please Input Your Pointing Domain In Cloudflare "
 read -rp "Domain/Host: " -e host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
-rm -f /home/homain
-echo "$host" > /home/domain
+#rm -f /home/homain
+echo "$host" > /etc/v2ray/domain
 echo -e "[${GREEN}Done${NC}]"
 
 #Update Sertificate SSL
@@ -34,6 +34,6 @@ systemctl start v2ray@none
 
 #Done
 echo -e "[${GREEN}Done${NC}]"
-echo "Location Your Domain : /home/domain"
+echo "Location Your Domain : /etc/v2ray/domain"
 echo ""
 echo -e "${RED}Autoscript By Sukirman${NC}"
