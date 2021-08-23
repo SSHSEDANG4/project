@@ -43,7 +43,7 @@ User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/bin/python -O /usr/local/bin/edu-ovpn 2082
+ExecStart=/usr/bin/python -O /usr/local/bin/edu-ovpn 2086
 Restart=on-failure
 
 [Install]
@@ -71,7 +71,7 @@ User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-dropbear 2095
+ExecStart=/usr/bin/python -O /usr/local/bin/ws-dropbear 2082
 Restart=on-failure
 
 [Install]
@@ -272,6 +272,14 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 # konfigurasi stunnel
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
+
+#install badvpncdn
+wget https://github.com/ambrop72/badvpn/archive/master.zip
+unzip master.zip
+cd badvpn-master
+mkdir build
+cmake .. -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_UDPGW=1
+sudo make install
 
 #OpenVPN
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
