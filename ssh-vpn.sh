@@ -14,10 +14,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=heyosam.me
-organizationalunit=heyosam.me
-commonname=heyosam.me
-email=admin@heyosam.me
+organization=sosohoha.my.id
+organizationalunit=sosohoha.my.id
+commonname=sosohoha.my.id
+email=admin@sosohoha.my.id
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/hesoyam-oke/project/main/password"
@@ -169,7 +169,7 @@ apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rs
 echo "clear" >> .profile
 echo "neofetch" >> .profile
 echo "echo Mod By Sukirman" >> .profile
-echo "echo Ketik menu Untuk Melihat Options" >> .profile
+echo "echo Silahkan Ketik Menu Untuk Melihat daftar Perintah" >> .profile
 
 # install webserver
 apt -y install nginx
