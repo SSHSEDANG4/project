@@ -273,14 +273,6 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
-#install badvpncdn
-wget https://github.com/ambrop72/badvpn/archive/master.zip
-unzip master.zip
-cd badvpn-master
-mkdir build
-cmake .. -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_UDPGW=1
-sudo make install
-
 #OpenVPN
 wget https://raw.githubusercontent.com/hesoyam-oke/project/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
