@@ -2,7 +2,7 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- ifconfig.co);
+MYIP=$(wget -qO- ifconfig.me/ip);
 echo "Checking VPS"
 IZIN=$( curl http://akses.heyosam.me:81/sukirmanoke | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
@@ -23,7 +23,7 @@ read -p "Username : " Login
 read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
 
-IP=$(wget -qO- ifconfig.co);
+IP=$(wget -qO- ifconfig.me/ip);
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
@@ -59,8 +59,8 @@ echo -e "OpenSSH      : 22"
 echo -e "Dropbear     : 109, 143"
 echo -e "SSL/TLS      :$ssl"
 echo -e "WS Non SSL   : 2082"
-echo -e "WS SSL   : 2053"
-echo -e "WS Ovpn  : 2086"
+echo -e "WS SSL    : 2053"
+echo -e "WS Ovpn   : 2086"
 echo -e "Port Squid   :$sqd"
 echo -e "badvpn       : 7100-7300"
 echo -e "==============================="
